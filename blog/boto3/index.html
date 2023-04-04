@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>Lekshmi Kolappan</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="The website of Lekshmi Kolappan, DevOps/SRE Engineer">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Lekshmi Kolappan">
+  <meta name="generator" content="Hugo 0.68.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="blog">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/blog">Blog</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/portfolio">Portfolio</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/contact">Contact</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/Snippet">Snippet</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="https://example.com"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/blog">Blog</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/contact">Contact</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/Snippet">Snippet</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Boto3 Resource, Client and Session</h1>
+    <p class="uk-text-center uk-text-lead"></p>
+    <p class="uk-text-center">Published on Jul 15, 2021</p>
+    <p class="uk-text-center">Reading time: 2 minutes.</p>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <h2 id="core-concepts-of-boto3">Core concepts of Boto3</h2>
+<hr>
+<ul>
+<li>There are few concepts of boto3 (aws sdk) like Session, Resource, Client, Meta, Collections, Paginators</li>
+<li>In this post we will discuss about the kehy difference between  Resource, Client and Session</li>
+</ul>
+<hr>
+<h2 id="session">Session</h2>
+<hr>
+<p>A session manages state about a particular configuration. By default, a session is created for you when needed. However, it&rsquo;s possible and recommended that in some scenarios you maintain your own session. Sessions typically store the following:</p>
+<ul>
+<li>Credentials</li>
+<li>AWS Region</li>
+<li>Other configurations related to your profile</li>
+</ul>
+<h3 id="default-session">Default session</h3>
+<p>Boto3 acts as a proxy to the default session. This is created automatically when you create a low-level client or resource client</p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">import boto3
+
+<span style="color:#0080ff;font-style:italic"># Using the default session</span>
+s3 <span style="color:#2c5dcd">=</span> boto3.resource<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;s3&#39;</span><span style="color:#2c5dcd">)</span>
+
+<span style="color:#2c5dcd;font-weight:bold">for</span> each_buck in s3.buckets.all<span style="color:#2c5dcd">()</span>:
+    print<span style="color:#2c5dcd">(</span>each_buck.name<span style="color:#2c5dcd">)</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="custom-session">Custom session</h3>
+<p>You can also manage your own session and create low-level clients or resource clients from it:</p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">import boto3
+import boto3.session
+
+<span style="color:#0080ff;font-style:italic"># Create your own session</span>
+my_session <span style="color:#2c5dcd">=</span> boto3.session.Session<span style="color:#2c5dcd">(</span>profile_name<span style="color:#2c5dcd">=</span>None<span style="color:#2c5dcd">)</span> <span style="color:#0080ff;font-style:italic">#profile_name is none as in we are going with default user in the .aws/credentials.</span> 
+
+
+<span style="color:#0080ff;font-style:italic"># Now we can create low-level clients or resource clients from our custom session</span>
+s3 <span style="color:#2c5dcd">=</span> my_session.resource<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;s3&#39;</span><span style="color:#2c5dcd">)</span>
+
+<span style="color:#2c5dcd;font-weight:bold">for</span> each_buck in s3.buckets.all<span style="color:#2c5dcd">()</span>:
+    print<span style="color:#2c5dcd">(</span>each_buck.name<span style="color:#2c5dcd">)</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="session-configurations">Session configurations</h3>
+<p>You can configure each session with specific credentials, AWS Region information, or profiles. The most common configurations you might use are:</p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">boto3.session.Session<span style="color:#2c5dcd">(</span>aws_access_key_id<span style="color:#2c5dcd">=</span>None, aws_secret_access_key<span style="color:#2c5dcd">=</span>None, aws_session_token<span style="color:#2c5dcd">=</span>None, region_name<span style="color:#2c5dcd">=</span>None, botocore_session<span style="color:#2c5dcd">=</span>None, profile_name<span style="color:#2c5dcd">=</span>None<span style="color:#2c5dcd">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>aws_access_key_id (string) &ndash; AWS access key ID</li>
+<li>aws_secret_access_key (string) &ndash; AWS secret access key</li>
+<li>aws_session_token (string) &ndash; AWS temporary session token</li>
+<li>region_name (string) &ndash; Default region when creating new connections</li>
+<li>botocore_session (botocore.session.Session) &ndash; Use this Botocore session instead of creating a new default one.</li>
+<li>profile_name (string) &ndash; The name of a profile to use. If not given, then the default profile is used.</li>
+</ul>
+<h2 id="resource">Resource</h2>
+<p>Resources represent an object-oriented interface to Amazon Web Services (AWS). They provide a higher-level abstraction than the raw, low-level calls made by service clients. To use resources, you invoke the resource() method of a Session and pass in a service name</p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">import boto3
+import boto3.session
+
+my_session <span style="color:#2c5dcd">=</span> boto3.session.Session<span style="color:#2c5dcd">(</span>profile_name<span style="color:#2c5dcd">=</span>None<span style="color:#2c5dcd">)</span> 
+<span style="color:#0080ff;font-style:italic"># Now we can create low-level clients or resource clients from our custom session</span>
+s3 <span style="color:#2c5dcd">=</span> my_session.resource<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;s3&#39;</span><span style="color:#2c5dcd">)</span> <span style="color:#0080ff;font-style:italic"># you can use any resource within aws</span> 
+
+<span style="color:#2c5dcd;font-weight:bold">for</span> each_buck in s3.buckets.all<span style="color:#2c5dcd">()</span>:
+    print<span style="color:#2c5dcd">(</span>each_buck.name<span style="color:#2c5dcd">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="clients">Clients</h2>
+<p>Clients provide a low-level interface to AWS whose methods map close to 1:1 with service APIs. All service operations are supported by clients. Clients are generated from a JSON service definition file.</p>
+<p>Diffeence between client and resource</p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">import boto3
+
+print <span style="color:#2c5dcd">(</span><span style="color:#0c6">&#34;This is using resource&#34;</span><span style="color:#2c5dcd">)</span>
+
+my_session <span style="color:#2c5dcd">=</span> boto3.session.Session<span style="color:#2c5dcd">(</span>profile_name<span style="color:#2c5dcd">=</span>None<span style="color:#2c5dcd">)</span>
+iam_resource <span style="color:#2c5dcd">=</span> my_session.resource<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;iam&#39;</span><span style="color:#2c5dcd">)</span>
+
+
+<span style="color:#2c5dcd;font-weight:bold">for</span> each_user in iam_resource.users.all<span style="color:#2c5dcd">()</span>: <span style="color:#0080ff;font-style:italic">#resource provides higher-level abstraction than the raw, low-level calls made by service clients</span>
+    print<span style="color:#2c5dcd">(</span>each_user.name<span style="color:#2c5dcd">)</span>
+
+print <span style="color:#2c5dcd">(</span><span style="color:#0c6">&#34;-----------------------&#34;</span><span style="color:#2c5dcd">)</span>
+
+print <span style="color:#2c5dcd">(</span><span style="color:#0c6">&#34;This is using client&#34;</span><span style="color:#2c5dcd">)</span>
+
+
+my_session <span style="color:#2c5dcd">=</span> boto3.session.Session<span style="color:#2c5dcd">(</span>profile_name<span style="color:#2c5dcd">=</span>None<span style="color:#2c5dcd">)</span>
+iam_client<span style="color:#2c5dcd">=</span> my_session.client<span style="color:#2c5dcd">(</span>service_name<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;iam&#39;</span>,region_name<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;us-east-a&#39;</span><span style="color:#2c5dcd">)</span>
+
+<span style="color:#2c5dcd;font-weight:bold">for</span> each in iam_client.list_users<span style="color:#2c5dcd">()[</span><span style="color:#0c6">&#39;Users&#39;</span><span style="color:#2c5dcd">]</span>:  <span style="color:#0080ff;font-style:italic">#in client method we have to search for Users as Dict and with the output we have to playaround</span>
+    print <span style="color:#2c5dcd">(</span>each<span style="color:#2c5dcd">[</span><span style="color:#0c6">&#39;UserName&#39;</span><span style="color:#2c5dcd">])</span>
+
+
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:lekshmi.kola@gmail.com">lekshmi.kola@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+          <div uk-lightbox>
+            <a href="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwbHYJaUqfEgRK0Ui9dVGimc&amp;key=AIzaSyAE_4rVAKux_DSPcb_OdSRDaovtPOSk_3U" data-caption="Reading, UK"
+               data-type="iframe">Reading, UK</a>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+      <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+      <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+      2023
+      Lekshmi Kolappan
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>
