@@ -82,16 +82,5 @@ What is Proxy server? It is a server that sits in front of a group of client mac
       <description>Play with kubernets at ease! Alias? What,Why 🤔   An alias is a (usually short) name that the shell translates into another (usually longer) name or command. Aliases allow you to define new commands by substituting a string for the first token of a simple command. It can be used to avoid typing long commands or as a means to correct incorrect input. For common patterns it can reduce keystrokes and improve efficiency.</description>
     </item>
     
-    <item>
-      <title>Making a new Website</title>
-      <link>https://example.com/blog/first-blog/</link>
-      <pubDate>Tue, 31 Dec 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://example.com/blog/first-blog/</guid>
-      <description>For a long time this website has had a couple of links to contact me, but those days are over.
-Now I have a brand new Hugo website with a custom written theme complete with
- A homepage with more social links, and description of my skills An about page with description of who I am A portfolio page to showcase all my projects A blog  Why Hugo? The first question is why a site builder?</description>
-    </item>
-    
   </channel>
 </rss>

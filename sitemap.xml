@@ -63,28 +63,8 @@
   </url>
   
   <url>
-    <loc>https://example.com/categories/ec2/</loc>
-    <lastmod>2020-06-19T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://example.com/portfolio/hugo-portfolio-website/</loc>
-    <lastmod>2020-06-19T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://example.com/portfolio/jenkins-as-a-container/</loc>
     <lastmod>2020-06-19T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://example.com/portfolio/example-team-no-github/</loc>
-    <lastmod>2020-06-19T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://example.com/blog/first-blog/</loc>
-    <lastmod>2019-12-31T12:14:34+06:00</lastmod>
   </url>
   
   <url>

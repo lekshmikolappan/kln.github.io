@@ -8,7 +8,7 @@
     <language>en-gb</language>
     <lastBuildDate>Fri, 19 Jun 2020 23:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AWS</title>
+      <title>aws</title>
       <link>https://example.com/categories/aws/</link>
       <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
       
@@ -22,15 +22,6 @@
       <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
       
       <guid>https://example.com/categories/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EC2</title>
-      <link>https://example.com/categories/ec2/</link>
-      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/categories/ec2/</guid>
       <description></description>
     </item>
     
