@@ -20,7 +20,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" property="og:description" content="A portfolio website made with Hugo">
+  <meta name="description" property="og:description" content="EKS deployment">
   <meta name="image" property="og:image" content="/">
   <meta name="author" content="Lekshmi Kolappan">
   <meta name="generator" content="Hugo 0.80.0" />
@@ -265,40 +265,26 @@
 
 <section>
   <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
-    <h1 class="uk-text-center uk-heading-medium">Team project without GitHub</h1>
-    <p class="uk-text-center uk-text-lead">A portfolio website made with Hugo</p>
+    <h1 class="uk-text-center uk-heading-medium">AWS EKS Deployment through terraform</h1>
+    <p class="uk-text-center uk-text-lead">EKS deployment</p>
     <p class="uk-text-center">Published on Jun 19, 2020</p>
-    <p class="uk-text-center">Reading time: 0 minutes.</p>
+    <p class="uk-text-center">Reading time: 3 minutes.</p>
     
 
     <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
       
-      <div>
-        <button class="uk-button uk-button-default" type="button"> <span uk-icon="icon: users"></span> Team
-          Project</button>
-        <div class="uk-width-auto" uk-dropdown="pos: bottom-center; delay-hide:400">
-          <div class="uk-dropdown-grid uk-child-width-1-2" uk-grid>
-            <div>
-              <ul class="uk-nav uk-dropdown-nav">
-                
-                <li><a href="https://github.com/samrobbins85"> <img src="https://github.com/samrobbins85.png" alt="Smiley face"
-                      width="42" height="42" style="border-radius: 50%"> samrobbins85</a></li>
-                
-                <li><a href="https://github.com/Gorgeous-Patrick"> <img src="https://github.com/Gorgeous-Patrick.png" alt="Smiley face"
-                      width="42" height="42" style="border-radius: 50%"> Gorgeous-Patrick</a></li>
-                
-              </ul>
-            </div>
 
-          </div>
-        </div>
+    
+
+
+    
+      <div>
+        
+        <a class="uk-button uk-button-default" href="https://github.com/Lforlinux/aws-terraform-nodejs"> <span uk-icon="icon: github"></span>
+          Github</a>
+        
       </div>
       
-
-    
-
-
-    
     </div>
 
     
@@ -315,8 +301,20 @@
              uk-grid>
           
           <div class="imagemargin">
-            <a href="https://gohugo.io/">
-            <img class="contain skills" src="https://res.cloudinary.com/samrobbins/image/upload/v1591793276/logos/logos_hugo_h2xbne.svg" alt="Hugo" loading="lazy" style="cursor: pointer">
+            <a href="https://www.terraform.io/">
+            <img class="contain skills" src="https://www.vectorlogo.zone/logos/terraformio/terraformio-ar21.svg" alt="Terraform" loading="lazy" style="cursor: pointer">
+            </a>
+          </div>
+          
+          <div class="imagemargin">
+            <a href="https://helm.sh/">
+            <img class="contain skills" src="https://cncf-branding.netlify.app/img/projects/helm/icon/color/helm-icon-color.png" alt="Helm" loading="lazy" style="cursor: pointer">
+            </a>
+          </div>
+          
+          <div class="imagemargin">
+            <a href="https://aws.amazon.com/eks/">
+            <img class="contain skills" src="https://www.itopstimes.com/wp-content/uploads/2018/06/amazon-eks.png" alt="AWS EKS" loading="lazy" style="cursor: pointer">
             </a>
           </div>
           
@@ -331,7 +329,96 @@
     
 
     <div class="content">
-      <p>This is some content</p>
+      <h2 id="what-is-the-significance-of-this">What is the significance of this?</h2>
+<ul>
+<li>Using this repository, you can provision the application as well as all of your cloud infrastructure with a single command.</li>
+</ul>
+<h2 id="how-is-automation-accomplished">How is automation accomplished?</h2>
+<ul>
+<li>Terraform has been used to provision infrastructure on AWS.</li>
+<li>To make provision for application On the AWS EKS, deployment has been performed through using Helm template.</li>
+<li>To fit the Kubernetes design, the NodeJS service has been changed to a microservice.</li>
+<li>Terraform has been converted into a docker container microservice to improve team cooperation by ensuring that everyone uses the same version of the software.</li>
+<li>This project makes use of Makefile to automate the provisioning of the full stack with a single command.</li>
+<li>For convenience of usage, the load and performance testing tool locust has been transformed into a docker container.</li>
+</ul>
+<h2 id="prerequisite">Prerequisite</h2>
+<ul>
+<li>AWS account access</li>
+<li>AWS iam programmatic user access with the follwing policy attached to the user</li>
+<li>AmazonEC2FullAccess,IAMFullAccess,AutoScalingFullAccess,AmazonEKSClusterPolicy,     ￼</li>
+<li>AmazonEKSWorkerNodePolicy,AmazonVPCFullAccess,AmazonEKSServicePolicy,AmazonEKS_CNI_Policy</li>
+</ul>
+<h2 id="source-code">Source Code</h2>
+<pre><code>https://github.com/Lforlinux/aws-terraform-nodejs
+</code></pre><hr>
+<h2 id="how-to-provision-the-infra">How to provision the infra</h2>
+<p>Makefile has been leveraged for the simple approach towards the one-click entire stack deployment.</p>
+<ul>
+<li>GIT Clone <a href="https://github.com/Lforlinux/aws-terraform-nodejs">this repo</a></li>
+<li>Configure your AWS credentials.</li>
+<li>Just deploy the entire stack by following single command.</li>
+</ul>
+<pre><code>make deploy
+</code></pre><ul>
+<li>Review the resources and type yes.</li>
+<li>Detailed workflow has been given on the following diagram.</li>
+</ul>
+<h2 id="workflow-diagram">Workflow diagram.</h2>
+<p><img src="https://raw.githubusercontent.com/Lforlinux/aws-terraform-nodejs/master/workflow.png" alt="N|Solid"></p>
+<hr>
+<hr>
+<h2 id="architecture">Architecture.</h2>
+<p><img src="https://raw.githubusercontent.com/Lforlinux/aws-terraform-nodejs/master/architecture.png" alt="image"></p>
+<h2 id="how-to-see-the-application-and-access-the-kubernetes-cluster">How to see the application and access the Kubernetes cluster.</h2>
+<ul>
+<li>If you are running the <code>make deploy</code> inside laptop/ AWS instance. The Kubernetes kubeconfig will be posted on the same directory. You can make use of this kubeconfig if you are using any K8s tools like Lens or any other k8s IDE.</li>
+<li>Another way to access the k8s cluster is via kubectl.</li>
+<li>set the context by the following command after <code>make deploy</code></li>
+<li><code>aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)</code></li>
+<li>Above command will set the context to use the kubectl.</li>
+<li>Now ALB URL will be available by <code>kubectl get svc</code> or go to the AWS ALB console and copy and use it on any browser.</li>
+</ul>
+<pre><code>[ec2-user@ip-172-31-83-136 aws-terraform-nodejs]$ kubectl get svc
+NAME                              TYPE           CLUSTER-IP     EXTERNAL-IP                                                              PORT(S)        AGE
+nodejsapplication-helm-nodejs     LoadBalancer   172.20.83.16   a0a551a21584c449a961842a873b38c6-718686509.us-east-1.elb.amazonaws.com   80:31924/TCP   18m
+</code></pre><ul>
+<li>Port 80 for the NodeJS application is open on the internet.  </li>
+</ul>
+<h2 id="how-fault-tolerance-with-high-availability-achieved">How fault tolerance with high availability achieved</h2>
+<ul>
+<li>K8s resources are deployed as deployment and mapped to Horizontal Pod Autoscaler.</li>
+<li>HPA will look after the pod&rsquo;s memory and CPU utilization and it will increase the pods' count and decrease the pod count if the load pressure comes under control.  </li>
+<li>K8s worker nodes are deployed are AWS Auto Scaling Group.  </li>
+</ul>
+<h2 id="performance-testing--load-testing">Performance Testing / Load Testing.  </h2>
+<ul>
+<li>use the following command to do performance/load testing.</li>
+</ul>
+<pre><code># export TARGET_HOST=Place-your-ALB-URL-Here
+
+# docker run -i --rm -v $PWD/reports:/opt/reports -v ~/.aws:/root/.aws -v $PWD/:/opt/script -v $PWD/credentials:/meta/credentials -p 8089:8089 -e ROLE=standalone -e TARGET_HOST=$TARGET_HOST -e LOCUST_FILE=https://raw.githubusercontent.com/zalando-incubator/docker-locust/master/example/simple.py -e SLAVE_MUL=4 -e AUTOMATIC=False registry.opensource.zalan.do/tip/docker-locust
+</code></pre><ul>
+<li>open your local browser and use localhost:8089 (The IP varies Depending on where you are running the above docker command)</li>
+<li>Give the user and load iteration above 1000 concurrent users to generate the load.</li>
+<li>Monitor the pod&rsquo;s counts and HPA as per the load the pod&rsquo;s count will be increased via HPA component.</li>
+</ul>
+<h2 id="application-lifecycle-management-with-zero-downtime">Application lifecycle Management with zero downtime.</h2>
+<ul>
+<li>Make sure to do the code change for the Nodejs app given on this same directory.</li>
+<li>Do docker build and push it to the Docker registry</li>
+<li>Once we have the latest image available create a branch from this repository</li>
+<li>append new image tag on the NodeJS helm chart values.yaml file.</li>
+<li>Create a PR</li>
+<li>Apply the change by running terraform <code>make deploy</code></li>
+<li>Deployment will be performed by Helm. The K8s deployment will take care of rolling updates on the pods to achieve zero downtime.  </li>
+</ul>
+<h2 id="enhancement">Enhancement</h2>
+<ul>
+<li>The whole orchestration can be performed via Jenkins as a scripted/Declatrative pipeline</li>
+<li>Helm chart can be packaged and placed in a separate registry which will give more leverage for our App lifecycle management.</li>
+<li>GitOps model can be implemented via the branch build and PR&rsquo;s terraform can be posted on the PR itself via GitHook from Jenkins slave to Git PR. Once approved promotion and apply parts can be done via the pipeline. </li>
+</ul>
 
     </div>
   </div>

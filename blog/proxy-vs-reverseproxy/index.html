@@ -20,7 +20,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" property="og:description" content="This is meta description.">
+  <meta name="description" property="og:description" content="Proxy vs Reverse Proxy">
   <meta name="image" property="og:image" content="/">
   <meta name="author" content="Lekshmi Kolappan">
   <meta name="generator" content="Hugo 0.80.0" />
@@ -36,8 +36,7 @@
   
   <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
 
-  <link rel="alternate" type="application/rss+xml" href="https://example.com/portfolio/index.xml" title="Lekshmi Kolappan" />
-<script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
 
   <!--Favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -46,7 +45,7 @@
   <link rel="manifest" href="/site.webmanifest">
 
 </head>
-<body class="portfolio">
+<body class="blog">
     <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
     <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
         <div class="uk-navbar-right">
@@ -74,18 +73,18 @@
                 
                 
                 
-                <li><a style="font-size: 18px; text-transform: none" href="/blog">Blog</a></li>
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 <li class="uk-active"><a style="font-size: 18px; text-transform:none"
-                        href="/portfolio">Portfolio</a></li>
+                        href="/blog">Blog</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/portfolio">Portfolio</a></li>
                 
                 
                 
@@ -142,7 +141,7 @@
             
             
             
-            <li><a style="font-size: 18px" href="/blog">Blog</a></li>
+            <li class="uk-active"><a style="font-size: 18px" href="/blog">Blog</a></li>
             
             
             
@@ -152,7 +151,7 @@
             
             
             
-            <li class="uk-active"><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
+            <li><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
             
             
             
@@ -180,146 +179,141 @@
     </div>
 </div>
 
- 
 
-<section class="uk-margin-large-bottom">
-        <h1 class="uk-heading-large uk-text-center">Portfolio</h1>
-</section>
 
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
 
 
 <section>
-  <div class="uk-container uk-margin-xlarge-bottom">
-    <div uk-filter="target: .js-filter">
-      <ul class="uk-subnav uk-subnav-pill uk-subnav-divider">
-        <li uk-filter-control><a href="#">All</a></li>
-        
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Proxy vs Reverse Proxy</h1>
+    <p class="uk-text-center uk-text-lead">Proxy vs Reverse Proxy</p>
+    <p class="uk-text-center">Published on Jul 24, 2021</p>
+    <p class="uk-text-center">Reading time: 1 minutes.</p>
+    
 
-        <li uk-filter-control="[data-tags*='python']">
-          <a href="#">py3</a>
-        </li>
+    <hr class="full-width">
+    
 
-        
+    <div class="content">
+      <hr>
+<ul>
+<li>In this post we will see what is proxy and reverse proxy.</li>
+<li>We will also discuss the differnce between them.</li>
+</ul>
+<hr>
+<h2 id="what-is-proxy">What is proxy?</h2>
+<p>Proxy is an act where someelse doing something for you on your behalf.</p>
+<p>Simple explantion of a proxy act in the below image.</p>
+<p><img src="https://raw.githubusercontent.com/Lforlinux/lforlinux.github.io/master/posts/proxy.png" alt="N|Solid"></p>
+<h2 id="what-is-proxy-server">What is Proxy server?</h2>
+<p>It is a server that sits in front of a group of client machines. When those computers make requests to sites and services on the Internet, the proxy server intercepts those requests and then communicates with web servers on behalf of those clients, like a middleman.</p>
+<h2 id="proxy-aka-forward-proxy">Proxy aka Forward proxy</h2>
+<p><img src="https://raw.githubusercontent.com/Lforlinux/lforlinux.github.io/master/posts/Forward-proxy.png" alt="N|Solid"></p>
+<h3 id="advantages-of-having-a-proxy-on-client-machine">Advantages of having a proxy on client machine</h3>
+<ul>
+<li>Proxy act as a Firewall and protect the client machine</li>
+<li>Channels the traffic</li>
+<li>Security</li>
+<li>Caching - without need of fetching the data over and over from the internet the proxy will hold the cache for us hence improved performance</li>
+<li>Encyption and Decrption - Mask our data&rsquo;s over the internet by not passing as a plain text.</li>
+</ul>
+<h2 id="what-is-reverse-proxy">What is Reverse Proxy?</h2>
+<p>A reverse proxy is a server that sits in front of web servers and forwards client (e.g. web browser) requests to those web servers.</p>
+<h2 id="reverse-proxy">Reverse Proxy</h2>
+<p><img src="https://raw.githubusercontent.com/Lforlinux/lforlinux.github.io/master/posts/Revese-proxy.png" alt="N|Solid"></p>
+<h3 id="advantages-of-reverse-proxy">Advantages of reverse proxy</h3>
+<ul>
+<li>Instead of exposing the server over the internet reverse proxy will act like a point of contact.</li>
+<li>Reverse proxy will filter the request and send it to the server.</li>
+<li>It also act as load balancer if there are many server connected to it.</li>
+<li>Help to compress the request by reducing the data pocket amount.</li>
+</ul>
 
-        <li uk-filter-control="[data-tags*='aws']">
-          <a href="#">amazon</a>
-        </li>
-
-        
-
-        <li uk-filter-control="[data-tags*='Docker']">
-          <a href="#">Containers</a>
-        </li>
-
-        
-      </ul>
-
-      <ul
-        class="js-filter uk-child-width-1-1 uk-child-width-1-4@m uk-text-center"
-        uk-grid
-        uk-height-match="target: > li > div > .fixy"
-      >
-        
-        <li data-tags="aws">
-          <div class="uk-card uk-card-default" style="position: relative;">
-            <div class="fixy">
-              <div class="uk-card-media-top">
-                <img
-                  class="contain experience"
-                  src="https://miro.medium.com/v2/resize:fit:763/1*lgt6E6bGC384R8MKGM3FXw.png"
-                  alt=""
-                />
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">AWS EKS Deployment through terraform</h3>
-                <p>EKS deployment</p>
-              </div>
-            </div>
-
-            <div class="uk-card-footer">
-              <a href="/portfolio/terraform-eks/" class="uk-button uk-button-text"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </li>
-        
-        <li data-tags="AWS">
-          <div class="uk-card uk-card-default" style="position: relative;">
-            <div class="fixy">
-              <div class="uk-card-media-top">
-                <img
-                  class="contain experience"
-                  src="https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_hugo_h2xbne.svg"
-                  alt=""
-                />
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">Hugo Portfolio Website</h3>
-                <p>A portfolio website made with Hugo</p>
-              </div>
-            </div>
-
-            <div class="uk-card-footer">
-              <a href="/portfolio/hugo-portfolio-website/" class="uk-button uk-button-text"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </li>
-        
-        <li data-tags="Docker">
-          <div class="uk-card uk-card-default" style="position: relative;">
-            <div class="fixy">
-              <div class="uk-card-media-top">
-                <img
-                  class="contain experience"
-                  src="https://technologyconversations.files.wordpress.com/2017/06/jenkins-docker.png"
-                  alt=""
-                />
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">Jenkins as a container</h3>
-                <p>Jenkins as a container</p>
-              </div>
-            </div>
-
-            <div class="uk-card-footer">
-              <a href="/portfolio/jenkins-as-a-container/" class="uk-button uk-button-text"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </li>
-        
-        <li data-tags="EC2">
-          <div class="uk-card uk-card-default" style="position: relative;">
-            <div class="fixy">
-              <div class="uk-card-media-top">
-                <img
-                  class="contain experience"
-                  src="https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_hugo_h2xbne.svg"
-                  alt=""
-                />
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">Team project without GitHub</h3>
-                <p>A portfolio website made with Hugo</p>
-              </div>
-            </div>
-
-            <div class="uk-card-footer">
-              <a href="/portfolio/example-team-no-github/" class="uk-button uk-button-text"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </li>
-        
-      </ul>
     </div>
   </div>
+  </div>
 </section>
+
 
 
     </div>

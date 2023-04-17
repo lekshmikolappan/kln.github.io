@@ -6,10 +6,44 @@
     <description>Recent content in Blog on Lekshmi Kolappan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="https://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overview of ChatGPT and DevOps use cases</title>
+      <link>https://example.com/blog/chatgpt/</link>
+      <pubDate>Sat, 10 Dec 2022 01:23:24 +0530</pubDate>
+      
+      <guid>https://example.com/blog/chatgpt/</guid>
+      <description>What is ChatGPT?  GPT (Generative Pretrained Transformer) is a type of natural language processing (NLP) model developed by OpenAI. It is a large, powerful model that can generate human-like text based on the input it receives. It is optimized for generating responses to user input in a conversational context, and it can be trained on specific domains  What is the significane of it?   Sam Altman, the CEO and founder of OpenAI, recently announced the official release of the openGPT one week earlier(on November 30).</description>
+    </item>
     
-	<atom:link href="https://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins Pipeline</title>
+      <link>https://example.com/blog/declartive-vs-scripted-pipeline/</link>
+      <pubDate>Sun, 25 Jul 2021 08:53:27 +0530</pubDate>
+      
+      <guid>https://example.com/blog/declartive-vs-scripted-pipeline/</guid>
+      <description>What is Jenkins Pipeline 🤔   Jenkins Pipeline allows us to write the Jenkins build steps in code Pipelines are robust. So if your server undergoes an unpredicted restart, the pipeline will be automatically resumed. Jenkins Pipelines support big projects. You can run many jobs, and even use pipelines in a loop   Jenkins Pipeline format Jenkins Pipeline can be defined by a text file called JenkinsFile. You can implement pipeline as code using JenkinsFile, and this can be defined by using a DSL (Domain Specific Language).</description>
+    </item>
     
+    <item>
+      <title>Proxy vs Reverse Proxy</title>
+      <link>https://example.com/blog/proxy-vs-reverseproxy/</link>
+      <pubDate>Sat, 24 Jul 2021 08:53:27 +0530</pubDate>
+      
+      <guid>https://example.com/blog/proxy-vs-reverseproxy/</guid>
+      <description>In this post we will see what is proxy and reverse proxy. We will also discuss the differnce between them.   What is proxy? Proxy is an act where someelse doing something for you on your behalf.
+Simple explantion of a proxy act in the below image.
+What is Proxy server? It is a server that sits in front of a group of client machines. When those computers make requests to sites and services on the Internet, the proxy server intercepts those requests and then communicates with web servers on behalf of those clients, like a middleman.</description>
+    </item>
+    
+    <item>
+      <title>Bash scripting - set command </title>
+      <link>https://example.com/blog/bash-set-e/</link>
+      <pubDate>Thu, 22 Jul 2021 08:53:27 +0530</pubDate>
+      
+      <guid>https://example.com/blog/bash-set-e/</guid>
+      <description>🖥 Bash scripting - set command and its usage   In this post we will see what is set in bash scripting We will also discuss when to use set -e.   Set command Use the set command to set or unset values of shell options and positional parameters. You can change the value of shell attributes and positional parameters, or display the names and values of shell variables using set command.</description>
+    </item>
     
     <item>
       <title>Boto3 Resource, Client and Session</title>
@@ -18,6 +52,34 @@
       
       <guid>https://example.com/blog/boto3/</guid>
       <description>Core concepts of Boto3   There are few concepts of boto3 (aws sdk) like Session, Resource, Client, Meta, Collections, Paginators In this post we will discuss about the kehy difference between Resource, Client and Session   Session  A session manages state about a particular configuration. By default, a session is created for you when needed. However, it&amp;rsquo;s possible and recommended that in some scenarios you maintain your own session.</description>
+    </item>
+    
+    <item>
+      <title>Jenkins as a Container</title>
+      <link>https://example.com/blog/jenkins-as-docker/</link>
+      <pubDate>Mon, 28 Dec 2020 01:23:24 +0530</pubDate>
+      
+      <guid>https://example.com/blog/jenkins-as-docker/</guid>
+      <description>Run jenkins as a container with the stateful volume! Why Jenkins as a container 🤔  It&amp;rsquo;s helps simplify the installation process. Decrease dependency errors. The Turnaround time for an Jenkins server installation is just few minutes. Cross platform compatible.  Why do we need a stateful volume!🤨  Containers are often an ephemeral where in Jeknins we need to save our workloads even if we are not using it regularly.</description>
+    </item>
+    
+    <item>
+      <title>Docker-container-howitworks</title>
+      <link>https://example.com/blog/docker-cli-container-howitworks/</link>
+      <pubDate>Fri, 18 Dec 2020 08:53:27 +0530</pubDate>
+      
+      <guid>https://example.com/blog/docker-cli-container-howitworks/</guid>
+      <description>🐳 Docker container creation - How it works!   In this post we will see what is happening when we run a command # docker container run -it -d nginx We will also discuss some components involved during the container creation process   Docker CLI (docker) 💻  Docker CLI (docker)
+1  /usr/bin/docker   Docker is used as a reference to the whole set of docker tools and at the beginning, it was a monolith.</description>
+    </item>
+    
+    <item>
+      <title>Kubectl alias</title>
+      <link>https://example.com/blog/kubectl-alias/</link>
+      <pubDate>Thu, 17 Dec 2020 08:53:27 +0530</pubDate>
+      
+      <guid>https://example.com/blog/kubectl-alias/</guid>
+      <description>Play with kubernets at ease! Alias? What,Why 🤔   An alias is a (usually short) name that the shell translates into another (usually longer) name or command. Aliases allow you to define new commands by substituting a string for the first token of a simple command. It can be used to avoid typing long commands or as a means to correct incorrect input. For common patterns it can reduce keystrokes and improve efficiency.</description>
     </item>
     
     <item>

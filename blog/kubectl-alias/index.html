@@ -20,7 +20,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" property="og:description" content="My first blog, introducing my new website">
+  <meta name="description" property="og:description" content="Kubectl alias">
   <meta name="image" property="og:image" content="/">
   <meta name="author" content="Lekshmi Kolappan">
   <meta name="generator" content="Hugo 0.80.0" />
@@ -265,9 +265,9 @@
 
 <section>
   <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
-    <h1 class="uk-text-center uk-heading-medium">Making a new Website</h1>
-    <p class="uk-text-center uk-text-lead">My first blog, introducing my new website</p>
-    <p class="uk-text-center">Published on Dec 31, 2019</p>
+    <h1 class="uk-text-center uk-heading-medium">Kubectl alias</h1>
+    <p class="uk-text-center uk-text-lead">Kubectl alias</p>
+    <p class="uk-text-center">Published on Dec 17, 2020</p>
     <p class="uk-text-center">Reading time: 1 minutes.</p>
     
 
@@ -275,21 +275,71 @@
     
 
     <div class="content">
-      <p>For a long time this website has had a couple of links to contact me, but those days are over.</p>
-<p>Now I have a brand new Hugo website with a custom written theme complete with</p>
+      <h2 id="_play-with-kubernets-at-ease_"><em>Play with kubernets at ease!</em></h2>
+<h3 id="alias-whatwhy-">Alias? What,Why 🤔</h3>
+<hr>
 <ul>
-<li>A homepage with more social links, and description of my skills</li>
-<li>An about page with description of who I am</li>
-<li>A portfolio page to showcase all my projects</li>
-<li>A blog</li>
+<li>An alias is a (usually short) name that the shell translates into another (usually longer) name or command. Aliases allow you to define new commands by substituting a string for the first token of a simple command.</li>
+<li>It can be used to avoid typing long commands or as a means to correct incorrect input. For common patterns it can reduce keystrokes and improve efficiency. A simple example is setting default options on commands to avoid having to type them each time a command is run</li>
+<li>✨ Be lazy - use less keys on your keyboard ✨ 😜</li>
 </ul>
-<h3 id="why-hugo">Why Hugo?</h3>
-<p>The first question is why a <em>site builder</em>? I&rsquo;m competent at web development, why not just write it all myself? The markdown processing makes it much easier to just write words, not having to think about the formatting, and if I&rsquo;m going to blog often, then I&rsquo;ll need that.</p>
-<p>Next it gets to why Hugo? why not Jekyll or any of the other vast array of site builders? The answer to that is sadly rather boring, it had a theme I liked the look of, in particular <a href="https://github.com/themefisher/kross-hugo">this theme</a>, and it had an MIT license, so I could publish and tweak it as much as I wanted to.</p>
-<h3 id="why-start-blogging">Why start blogging?</h3>
-<p>A very good question. For one it would allow me to showcase my skills more than just a portfolio would, not everything fits under the umbrella of a portfolio, but I can blog about whatever I want. Secondly is to act as a reminder of how I do things, if I blog my process when I do technical things, I&rsquo;ll always be able to look back and see how I did it if I ever have to do it again.</p>
-<h3 id="so-what-can-i-expect-to-see-in-the-blog">So what can I expect to see in the blog?</h3>
-<p>The current plan is for the vast majority of posts to be technical guides on how to do things, but there might be some variety if I want to blog about events.</p>
+<hr>
+<p>Start your day with a list of things you know you tend to waste time on
+As <em>Alicia Rades</em> writes on the <a href="https://www.lifehack.org/author/alicia-j-rades">lifehack</a></p>
+<blockquote>
+<p>When you notice you’re wasting time,
+add that time-waster to the automation.
+This will serve as a reminder of things
+you shouldn’t allow yourself to do google
+around commands as an example here.</p>
+</blockquote>
+<h3 id="lets-get-started">Let&rsquo;s get started!</h3>
+<p>Open your favorite Terminal and run these command.</p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#5918bb;font-weight:bold">alias</span> k<span style="color:#2c5dcd">=</span>kubectl
+<span style="color:#5918bb;font-weight:bold">alias</span> kl<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl logs --tail 100 -f&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> ke<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl get events -o wide&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> knks<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl -n kube-system&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> knkp<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl -n kube-public&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> kdp<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl describe pod&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> ked<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl edit deployment&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> kr<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl get pods -o wide| grep -vE &#34;1/1|2/2|3/3|4/4|Completed&#34;&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> kr1<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl get pods | grep &#34;0/&#34; | grep -Eiv &#34;Completed&#34;&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> ksc<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl get pods -o wide | grep -Eiv &#34;1/1|0/1&#34;&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> klr<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;kubectl get deployments -o yaml | grep &#34;path: /api&#34;&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> kx<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#39;function _kx(){ kubectl exec -it $1 sh; };_kx&#39;</span>
+<span style="color:#5918bb;font-weight:bold">alias</span> kt<span style="color:#2c5dcd">=</span><span style="color:#2c5dcd;font-weight:bold">$(</span>kubectl -n kube-system describe secret <span style="color:#2c5dcd;font-weight:bold">$(</span>kubectl -n kube-system get secret | grep admin-user | awk <span style="color:#0c6">&#39;{print $1}&#39;</span><span style="color:#2c5dcd;font-weight:bold">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>How to use these alias in realtime? 🥳</p>
+<p>Below command will follow last 100 line of pods logs with ease 💪🏽.</p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">kl podname 
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>Kubectl official <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">Cheatsheet</a>.</p>
 
     </div>
   </div>

@@ -3,12 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://example.com/blog/chatgpt/</loc>
+    <lastmod>2022-12-10T01:23:24+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/blog/declartive-vs-scripted-pipeline/</loc>
+    <lastmod>2021-07-25T08:53:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/blog/proxy-vs-reverseproxy/</loc>
+    <lastmod>2021-07-24T08:53:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/blog/bash-set-e/</loc>
+    <lastmod>2021-07-22T08:53:27+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.com/blog/boto3/</loc>
     <lastmod>2021-07-15T01:23:24+05:30</lastmod>
   </url>
   
   <url>
+    <loc>https://example.com/blog/jenkins-as-docker/</loc>
+    <lastmod>2020-12-28T01:23:24+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/blog/docker-cli-container-howitworks/</loc>
+    <lastmod>2020-12-18T08:53:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/blog/kubectl-alias/</loc>
+    <lastmod>2020-12-17T08:53:27+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.com/categories/aws/</loc>
+    <lastmod>2020-06-19T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/portfolio/terraform-eks/</loc>
     <lastmod>2020-06-19T23:00:00+00:00</lastmod>
   </url>
   
@@ -18,12 +58,22 @@
   </url>
   
   <url>
+    <loc>https://example.com/categories/docker/</loc>
+    <lastmod>2020-06-19T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/ec2/</loc>
+    <lastmod>2020-06-19T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.com/portfolio/hugo-portfolio-website/</loc>
     <lastmod>2020-06-19T23:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/categories/python/</loc>
+    <loc>https://example.com/portfolio/jenkins-as-a-container/</loc>
     <lastmod>2020-06-19T23:00:00+00:00</lastmod>
   </url>
   

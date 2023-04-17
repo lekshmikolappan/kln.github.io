@@ -20,10 +20,10 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" property="og:description" content="The website of Lekshmi Kolappan, DevOps/SRE Engineer">
+  <meta name="description" property="og:description" content="Boto3 Resource, Client and Session">
   <meta name="image" property="og:image" content="/">
   <meta name="author" content="Lekshmi Kolappan">
-  <meta name="generator" content="Hugo 0.68.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
 
   <!-- plugins -->
   
@@ -104,7 +104,7 @@
                 
                 
                 
-                <li><a style="font-size: 18px; text-transform: none" href="/Snippet">Snippet</a></li>
+                <li><a style="font-size: 18px; text-transform: none" href="https://kayelen.com/resume/">CV</a></li>
                 
                 
             </ul>
@@ -171,7 +171,7 @@
             
             
             
-            <li><a style="font-size: 18px" href="/Snippet">Snippet</a></li>
+            <li><a style="font-size: 18px" href="https://kayelen.com/resume/">CV</a></li>
             
             
         </ul>
@@ -266,7 +266,7 @@
 <section>
   <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
     <h1 class="uk-text-center uk-heading-medium">Boto3 Resource, Client and Session</h1>
-    <p class="uk-text-center uk-text-lead"></p>
+    <p class="uk-text-center uk-text-lead">Boto3 Resource, Client and Session</p>
     <p class="uk-text-center">Published on Jul 15, 2021</p>
     <p class="uk-text-center">Reading time: 2 minutes.</p>
     
@@ -337,7 +337,7 @@ s3 <span style="color:#2c5dcd">=</span> boto3.resource<span style="color:#2c5dcd
 import boto3.session
 
 <span style="color:#0080ff;font-style:italic"># Create your own session</span>
-my_session <span style="color:#2c5dcd">=</span> boto3.session.Session<span style="color:#2c5dcd">(</span>profile_name<span style="color:#2c5dcd">=</span>None<span style="color:#2c5dcd">)</span> <span style="color:#0080ff;font-style:italic">#profile_name is none as in we are going with default user in the .aws/credentials.</span> 
+my_session <span style="color:#2c5dcd">=</span> boto3.session.Session<span style="color:#2c5dcd">(</span>profile_name<span style="color:#2c5dcd">=</span>None<span style="color:#2c5dcd">)</span> <span style="color:#0080ff;font-style:italic">#profile_name is none as in we are going with default user in the .aws/credentials. </span>
 
 
 <span style="color:#0080ff;font-style:italic"># Now we can create low-level clients or resource clients from our custom session</span>
@@ -386,7 +386,7 @@ import boto3.session
 
 my_session <span style="color:#2c5dcd">=</span> boto3.session.Session<span style="color:#2c5dcd">(</span>profile_name<span style="color:#2c5dcd">=</span>None<span style="color:#2c5dcd">)</span> 
 <span style="color:#0080ff;font-style:italic"># Now we can create low-level clients or resource clients from our custom session</span>
-s3 <span style="color:#2c5dcd">=</span> my_session.resource<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;s3&#39;</span><span style="color:#2c5dcd">)</span> <span style="color:#0080ff;font-style:italic"># you can use any resource within aws</span> 
+s3 <span style="color:#2c5dcd">=</span> my_session.resource<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;s3&#39;</span><span style="color:#2c5dcd">)</span> <span style="color:#0080ff;font-style:italic"># you can use any resource within aws </span>
 
 <span style="color:#2c5dcd;font-weight:bold">for</span> each_buck in s3.buckets.all<span style="color:#2c5dcd">()</span>:
     print<span style="color:#2c5dcd">(</span>each_buck.name<span style="color:#2c5dcd">)</span>

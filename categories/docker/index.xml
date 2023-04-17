@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Lekshmi Kolappan</title>
+    <link>https://example.com/categories/docker/</link>
+    <description>Recent content in Docker on Lekshmi Kolappan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 19 Jun 2020 23:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins as a container</title>
+      <link>https://example.com/portfolio/jenkins-as-a-container/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/portfolio/jenkins-as-a-container/</guid>
+      <description>Run jenkins as a container with the stateful volume! Why Jenkins as a container 🤔  It&amp;rsquo;s helps simplify the installation process. Decrease dependency errors. The Turnaround time for an Jenkins server installation is just few minutes. Cross platform compatible.  Why do we need a stateful volume!🤨  Containers are often an ephemeral where in Jeknins we need to save our workloads even if we are not using it regularly.</description>
+    </item>
+    
+  </channel>
+</rss>
